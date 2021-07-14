@@ -96,8 +96,9 @@ header{
 /* Players Styles */
 
 .players-container{
-    background-color: #efefef;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    background-color:#FFFFFF;
+    /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); */
+    /* box-shadow: 0 0 40px #efefef; */
     /* padding-left: 180px; */
     padding-top: 70px;
     display: grid;
@@ -114,7 +115,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-   
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     /* align-items: flex-start; */
     padding: 15px;
      width: 300px;
@@ -135,4 +136,34 @@ header{
 p{
      font-size: 16px;
      text-align: justify;
+ }
+
+ /* Footer Style */
+ footer{
+     background-color: #FFFFFF;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     /* text-align: center; */
+    padding-top: 180px;
+ }
+ .footer-logo img{
+    width: 483.87px;
+    height: 110px;
+    /*text-align: center; */
+    /* margin: 20px 0px; */
+ }
+ .footer-logo{
+     padding-top: 20px;
+     padding-bottom: 20px;
+ }
+ .fab{
+    color: #AEAEAE;
+    width: 32px;
+    height: 32px;
+}
+ .copyright{
+     font-size: 18px;
+     padding-bottom: 41px;
  }
