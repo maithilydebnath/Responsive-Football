@@ -5,7 +5,7 @@
 /* common style or utilities*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #efefef;
+    background-color:#FFFFFF;
     margin: 0;
 }
 header{
@@ -16,6 +16,7 @@ header{
 /* Head Section Styles */
 .header-container{
     display: flex;
+    width: 100%;
 }
 .page-heading{
     width: 50%;
@@ -38,17 +39,7 @@ header{
      /* left: 156px;
     top: 209px;*/
 } 
-@keyframes colorChanging {
 
-    from{
-        background-color: #E02C6D;
-        
-    }
-
-    to {
-        background-color: seagreen;
-      
-    } 
 }
 .button-link{
     text-decoration: none;
@@ -97,7 +88,6 @@ header{
 
 .players-container{
     background-color:#FFFFFF;
-    /* box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15); */
     /* box-shadow: 0 0 40px #efefef; */
     /* padding-left: 180px; */
     padding-top: 70px;
@@ -116,7 +106,6 @@ header{
     flex-direction: column;
     justify-content: center;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-    /* align-items: flex-start; */
     padding: 15px;
      width: 300px;
     /* height: 474px;  */
@@ -137,6 +126,92 @@ p{
      font-size: 16px;
      text-align: justify;
  }
+ /* Teams Styles */
+ @keyframes sliding1 {
+
+    0% {
+   
+        left: 500px;
+        top: 200px;
+    }
+
+    50% {
+        left: 0px;
+        top: 0px;
+    }
+
+    /* 100% {
+        background-color: seagreen;
+        left: 430px;
+        top: 0;
+    } */
+
+}
+.argentina {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation-name: sliding1;
+    animation-duration: 4s;
+    /* animation-iteration-count: 5;
+    animation-direction: alternate; */
+    transition: transform 1s ease-out ; 
+    /* transition: 2s transform; */
+}
+
+.argentina:hover{
+    transform: scale(1.5);
+     
+}
+@keyframes sliding2 {
+
+    0% {
+   
+        left: 600px;
+        top: 200px;
+    }
+
+    50% {
+        left: 0px;
+        top: 0px;
+    }
+}
+.brasil{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation-name: sliding2;
+    animation-duration: 4s;
+    transition: transform 1s ease-out ; 
+}
+
+.brasil:hover{
+    transform: scale(1.5);
+  
+  
+}
+ /* Latest Video Section Styles */
+ .section-container{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     margin-top: 130px;
+     margin-bottom: 50px;
+     padding-bottom: 30px;
+     text-align: center;
+     /* margin: 0; */
+ }
+ .Title{
+     font-size: 40px;
+     padding-top: 20px;
+     margin: 0;
+     
+ }
+ hr{  
+    width: 750px;
+    border: 1px solid linear-gradient(#E6E6E6, white); 
+ }
+ .video{
+     margin-top: 50px;
+ }
 
  /* Footer Style */
  footer{
@@ -146,7 +221,7 @@ p{
      justify-content: center;
      align-items: center;
      /* text-align: center; */
-    padding-top: 180px;
+    padding-top: 60px;
  }
  .footer-logo img{
     width: 483.87px;
