@@ -101,7 +101,11 @@ header{
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
      width: 300px;
+    
     /* height: 474px;  */
+}
+.players:hover{
+    transform: scale(1.05);
 }
 .player img{
     width: 300px;
@@ -196,7 +200,6 @@ p{
 .brasil:hover{
     transform: scale(1.5);
   
-  
 }
  /* Latest Video Section Styles */
 
@@ -210,23 +213,21 @@ p{
 
  /* Footer Style */
  footer{
-     background-color: #FFFFFF;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     /* text-align: center; */
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-top: 60px;
  }
  .footer-logo img{
     width: 483.87px;
     height: 110px;
-    /*text-align: center; */
-    /* margin: 20px 0px; */
+
  }
  .footer-logo{
-     padding-top: 20px;
-     padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
  }
  .fab{
     color: #AEAEAE;
@@ -234,8 +235,8 @@ p{
     height: 32px;
 }
  .copyright{
-     font-size: 18px;
-     padding-bottom: 41px;
+    font-size: 18px;
+    padding-bottom: 41px;
  }
 /* Media Queries */
 
@@ -252,19 +253,19 @@ p{
     }
     .header-container{
         flex-direction: column;
-        justify-content:flex-start;
+        /* justify-content:flex-start; */
         /* align-items: center; */
-        flex-wrap: wrap;
+    
         
-     }
+    }
      .page-heading, .section-container{
          width: 100%;
          margin: 0;
-     }
+    }
      .page-heading img{
         width: 329px;
         height: 259.17px;
-     }
+    }
      .heading-title{
         width: 300px;
         justify-content: center;
@@ -273,7 +274,7 @@ p{
         flex-wrap: wrap;
         padding-left: 0;
        
-     }
+    }
      .players-container{
         grid-template-columns: repeat(1, 1fr);
        margin-left: 20px;
@@ -292,7 +293,7 @@ p{
 }
 
      /* Tablet Devices */   
-    @media only screen and (min-width:688px) and (max-width:992px) {
+    @media only screen and (min-width:689px) and (max-width:992px) {
         header{
             display: grid;
             grid-template-rows:repeat(1, 1fr) ;
