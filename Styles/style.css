@@ -16,7 +16,7 @@ header{
 /* Head Section Styles */
 .header-container{
     display: flex;
-    width: 100%;
+
 }
 .page-heading{
     width: 50%;
@@ -40,7 +40,7 @@ header{
     top: 209px;*/
 } 
 
-}
+
 .button-link{
     text-decoration: none;
     font-weight: 500;
@@ -49,13 +49,6 @@ header{
     /* background-image: #E02C6D; */
     background-color: #E02C6D;
     padding: 10px 24px;
-    /* animation-name: colorChanging;
-    animation-duration: 4s;
-    animation-iteration-count: 5;
-    animation-direction: alternate;
-    /* animation: colorChanging 2s linear 0s 5 alternate; 
-    animation: name duration timing-function delay iteration-count direction fill-mode; 
-    animation-play-state: running;   */
     /* width: 168px;
     height: 44px;
     top: 464px; */
@@ -118,33 +111,46 @@ header{
     width: 300px;
     height: 154px;
     margin: 16px 0px;
+    /* padding-bottom: 30px; */
+}
+h1{
+    margin: 0;
 }
 .player-name{
      font-size: 28px;
+     
 }
 p{
      font-size: 16px;
      text-align: justify;
  }
  /* Teams Styles */
+ .section-container{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+     margin-top: 130px;
+     margin-bottom: 50px;
+     padding-bottom: 30px;
+     text-align: center;
+     /* margin: 0; */
+ }
+ .Title{
+     font-size: 40px;
+     padding-top: 20px;
+     margin: 0;
+     
+ }
  @keyframes sliding1 {
 
     0% {
    
-        left: 500px;
-        top: 200px;
+        left:-600px;
+        top: 0px;
     }
 
     50% {
         left: 0px;
         top: 0px;
     }
-
-    /* 100% {
-        background-color: seagreen;
-        left: 430px;
-        top: 0;
-    } */
 
 }
 .argentina {
@@ -153,6 +159,7 @@ p{
     position: relative;
     animation-name: sliding1;
     animation-duration: 4s;
+    animation-play-state: running;
     /* animation-iteration-count: 5;
     animation-direction: alternate; */
     transition: transform 1s ease-out ; 
@@ -168,7 +175,7 @@ p{
     0% {
    
         left: 600px;
-        top: 200px;
+        top: 0px;
     }
 
     50% {
@@ -182,6 +189,7 @@ p{
     position: relative;
     animation-name: sliding2;
     animation-duration: 4s;
+    animation-play-state: running;
     transition: transform 1s ease-out ; 
 }
 
@@ -191,20 +199,7 @@ p{
   
 }
  /* Latest Video Section Styles */
- .section-container{
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-     margin-top: 130px;
-     margin-bottom: 50px;
-     padding-bottom: 30px;
-     text-align: center;
-     /* margin: 0; */
- }
- .Title{
-     font-size: 40px;
-     padding-top: 20px;
-     margin: 0;
-     
- }
+
  hr{  
     width: 750px;
     border: 1px solid linear-gradient(#E6E6E6, white); 
@@ -242,3 +237,84 @@ p{
      font-size: 18px;
      padding-bottom: 41px;
  }
+/* Media Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width:688px){
+
+    header{
+        display: grid;
+        grid-template-rows:repeat(1, 1fr) ;
+        
+        width: 100%;
+        height: auto;
+       
+    }
+    .header-container{
+        flex-direction: column;
+        justify-content:flex-start;
+        /* align-items: center; */
+        flex-wrap: wrap;
+        
+     }
+     .page-heading, .section-container{
+         width: 100%;
+         margin: 0;
+     }
+     .page-heading img{
+        width: 329px;
+        height: 259.17px;
+     }
+     .heading-title{
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        flex-wrap: wrap;
+        padding-left: 0;
+       
+     }
+     .players-container{
+        grid-template-columns: repeat(1, 1fr);
+       margin-left: 20px;
+        }
+    .Title{
+            font-size: 34px;
+    }
+    iframe{
+        width: 100%;
+        height: auto;
+    }
+    .footer-logo img{
+        width: 275px;
+        height: 63px; 
+    }
+}
+
+     /* Tablet Devices */   
+    @media only screen and (min-width:688px) and (max-width:992px) {
+        header{
+            display: grid;
+            grid-template-rows:repeat(1, 1fr) ;
+            
+            width: 100%;
+            height: auto;
+           
+        }
+        .header-container{
+            flex-direction: column;
+            justify-content:flex-start;
+            /* align-items: center; */
+            flex-wrap: wrap;
+            
+         }
+         .page-heading{
+             width: 100%;
+         }
+         .players-container{
+                grid-template-columns: repeat(2, 1fr);
+                margin-left: 30px;
+            }
+        
+    
+        }
